@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- texllate -->
+    <link rel="stylesheet" href="/texllate/animate.css">
+    <title>Marsh -AI Desktop Assistant</title>
+
+</head>
+
+<body>
+    <!--Jquery  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+                    <div class="content">
+                        <p class="text-start text-light mb-4 siri-message" style="font-size: 28px;"></p>
+                        <div id="siri-container" align="center"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        <!-- toggle -->
+    <div class="toggle-btn" onclick="toggleSidebar()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <div id="sidebar">
+        <a href="#" class="sidebar-button" onclick="showPopupCard()">API</a>
+        <a href="#" class="sidebar-button" onclick="showPopupCardemail()">Emails</a>
+        <a href="#" class="sidebar-button" onclick="showPopupCardchatdata()">Chat Data</a>
+        <a href="#" class="sidebar-button" onclick="showPopupCardcred()">Your Email Credentials</a>
+    </div>
+    <!-- API -->
+    <div id="popupCardapi" class="popup-card">
+        <input type="text" id="inputText" placeholder="Enter Your Api Key...">
+        <button onclick="saveInput()">Save</button>
+        <!-- Cancel button -->
+        <button onclick="showapifile()" class="cancel-button">Open File</button>
+        <!-- Window exit button -->
+        <button onclick="hidePopupCard()" class="exit-button">X</button>
+    </div>
+
+    <!-- email -->
+    <div id="popupCardemail" class="popup-card">
+        <input type="text" id="inputTextn" placeholder="Enter The Name ">
+        <input type="text" id="inputTexte" placeholder="Enter Email ID ">
+        <button onclick="emailsaveInput()">Add Email</button>
+        <!-- Cancel button -->
+        <button onclick="showemailfile()" class="cancel-button">Open File</button>
+        <!-- Window exit button -->
+        <button onclick="hidePopupCardemail()" class="exit-button">X</button>
+    </div>
+    <!-- chat log -->
+    <div id="popupCardchatdata" class="popup-card">
+        <input type="text" id="inputTextqn" placeholder="Enter The Question ">
+        <input type="text" id="inputTexteans" placeholder="Enter The Answer Data ">
+        <button onclick="chatdatasaveInput()">Feed Data</button>
+        <!-- Cancel button -->
+        <button onclick="showchatfile()" class="cancel-button">Open File</button>
+        <!-- Window exit button -->
+        <button onclick="hidePopupCardchatdata()" class="exit-button">X</button>
+    </div>
+    <!-- email cred -->
+    <div id="popupCardemailcred" class="popup-card">
+        <input type="text" id="inputTextem" placeholder="Email ID ">
+        <input type="text" id="inputTextpass" placeholder="Email App Password (Generate in 2-step verification) ">
+        <button onclick="credsaveInput()">Save Credentials</button>
+        <!-- Cancel button -->
+        <button onclick="showcredfile()" class="cancel-button">Open File</button>
+        <!-- Window exit button -->
+        <button onclick="hidePopupCardcred()" class="exit-button">X</button>
+    </div>
+
+
+    <div class="run-btn">
+        <button id="run-button" class="run-button" onclick="startSiriWave()">Start</button>
+    </div>
+
+    <!--  -->
+    <!-- JS -->
+    <!--  -->
+    <!-- eel -->
+
+    <script type="text/javascript" src="/eel.js"></script>
+
+    <!-- siriwave -->
+    <script src="https://unpkg.com/siriwave/dist/siriwave.umd.min.js"></script>
+    <!-- texllate -->
+    <script src="/texllate/jquery.fittext.js"></script>
+    <script src="/texllate/jquery.lettering.js"></script>
+    <script src="http://jschr.github.io/textillate/jquery.textillate.js"></script>
+
+    <script src="main.js"></script>
+    <script src="control.js"></script>
+</body>
+
+</html>

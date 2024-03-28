@@ -1,0 +1,199 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    background-color: black;
+    font-weight: 100;
+
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.content {
+    text-align: start;
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 4rem;
+}
+
+
+.run-button {
+    position: fixed;
+    bottom: 150px;
+    width: 150px;
+    right: 690px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #10c9f7;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.run-button:hover {
+    background-color: #10c9f7;
+    color: #000;
+}
+
+/* Toggle button styles */
+.toggle-btn {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    cursor: pointer;
+    z-index: 999;
+    /* Ensure it's above sidebar */
+}
+
+.toggle-btn .bar {
+    width: 20px;
+    height: 1.5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: all 0.3s ease;
+}
+
+/* Sidebar styles */
+#sidebar {
+    position: fixed;
+    left: -200px;
+    /* Initially hidden */
+    top: 70px;
+    width: 200px;
+    height: 100%;
+    background-color: #000;
+    /* Dark mode background */
+    padding-top: 20px;
+    transition: left 0.3s ease;
+    /* Animation transition */
+}
+
+.sidebar-button {
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #10c9f7;
+    border-radius: 15px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.sidebar-button:hover {
+    background-color: #10c9f7;
+    color: #000;
+}
+
+/* Popup card styles */
+.popup-card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 40px;
+    max-width: 95%;
+    z-index: 1000;
+    display: none;
+    /* Initially hidden */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.popup-card input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.popup-card button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.popup-card button:hover {
+    background-color: #10c9f7;
+}
+
+/* Cancel button styles */
+.cancel-button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+    /* Adjust margin as needed */
+}
+
+.cancel-button:hover {
+    background-color: #10c9f7;
+    color: #000;
+}
+
+/* Window exit button styles */
+.exit-button {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    padding: 2px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.exit-button:hover {
+    background-color: #10c9f7;
+    color: #000;
+}
