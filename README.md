@@ -66,7 +66,7 @@ Clone the repo to make it available on your local system by using
 Change the directory i.e: 
 
 ```bash
-  cd AI-Desktop-Assistant-Python-OpenAI
+  cd Marsh-AI-Desktop_Assistant-with-GUI_Python-OpenAI
 ```
 ## Requirements:
 
